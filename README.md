@@ -8,7 +8,7 @@ Luego instalar las dependencias de npm.
 
 Finalmente ejecutar el proyecto con el comando: npm run dev
 
-Se deja algunos links de algunas hamburguesas,papas, gaseosas para que se puedan utilizar al momento de la ejecucion del proyecto.
+Se deja algunos links de algunas hamburguesas,papas, gaseosas que puden ser útiles al momento de la ejecucion del proyecto.
 
 HAMBURGUESAS
 
