@@ -1,14 +1,14 @@
-En el presente repositorio se encuentra la resolución de los ejercicios solicitados en el práctico de Integrador Html,Css,JavaScript.
+En el presente repositorio se encuentra la resolución de los ejercicios solicitados en el práctico de Integrador Html_Css_JavaScript.
 
 Se trata de un Sistema de Gestión de Pedidos para una Empresa de Comidas.
 
-Para visualizar la ejecución de la resolución debe primero clonar el repositorio usando este comando: https://github.com/hsinyulin03/Trabajo-Practico-Integrador_Html_Css_JavaScript-LIN-50069.git
+Para visualizar la ejecución de este proyecto debe primero clonar el repositorio utilizando el comando: https://github.com/hsinyulin03/Trabajo-Practico-Integrador_Html_Css_JavaScript-LIN-50069.git
 
 Luego instalar las dependencias de npm.
 
 Finalmente ejecutar el proyecto con el comando: npm run dev
 
-Se deja algunos links de algunas hamburguesas,papas, gaseosas que puden ser útiles al momento de la ejecucion del proyecto.
+Se deja algunos links de algunas hamburguesas, papas, gaseosas que puden ser útiles al momento de la ejecucion del proyecto.
 
 HAMBURGUESAS
 
