@@ -1,0 +1,313 @@
+/* ------------GENERALES---------------- */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+/*----------------HEADER---------------*/
+.container__principalHeader{
+  width: 100vw;
+  height:8vh;
+  background-color: rgb(153, 63, 63);
+  display: flex;
+  justify-content: flex-end;     /*alinea los elementos hijos al final del contenedor horizontalmente.*/
+  align-items: center;   /*alinea los elementos hijos al centro verticalmente.*/
+
+}
+
+.container__contentHeader{
+  width: 65%;
+  display: flex;
+  justify-content: space-between; /*distribuye los elementos hijos con espacio igual entre ellos horizontalmente.*/
+  padding: 0.4rem;
+
+}
+
+.headerSearch{
+  display: flex;
+  justify-content: space-around;/*distribuye los elementos de manera uniforme, con espacio igual entre ellos y también en los extremos.*/
+  align-items: center;
+  gap:1vh;
+ }
+
+.inputHeader{
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.4rem;
+  outline: none;
+  height: 2.5vh;
+  width: 20vw;
+  font-size: 2vh;
+}
+
+.buttonSearch{
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  width: 11vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  transition: 0.2s ease;
+  font-size: 2vh;
+}
+
+
+.buttonSearch:hover,
+.header__buttonAdd:hover{
+  cursor: pointer;
+  background-color: rgb(173, 72, 72);
+}
+
+.header__buttonAdd{
+  width: 20vw;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+
+}
+
+/*-------------MAIN----------------*/
+.container__view{
+  display: grid;
+  grid-template-columns:0.2fr 0.8fr;
+}
+
+.listAside{
+  height: 92vh; /*porque en el header tengo 8vh*/
+  background-color:rgb(187, 113, 113);
+}
+
+/* ---------STORE------------------ */
+.store{
+  background-color: rgb(219, 219, 219);
+  max-height: 92vh;
+  overflow-y: auto;
+  width: 100%;
+}
+.sectionStore{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+}
+.containerTitleSection{
+  margin: 1rem;
+  font-size: 3vh;
+  border-bottom: 1px solid grey;
+}
+.containerProductStore{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,0.6fr);
+  gap: 2vh;
+}
+
+.containerTargetItem{
+  width: 20vw;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.4rem;
+  box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border-radius: 0.4rem;
+  transition: 0.2s ease;
+}
+.containerTargetItem:hover{
+  cursor:pointer;
+  transform: scale(1.08);
+}
+.containerTargetItem h2{
+  font-size: 2vh;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.targetProps{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  font-size: 2vh;
+  text-align: center;
+}
+
+.sectionStore img{
+  width: 100%;
+  max-width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 0.4rem;
+  object-fit: cover; 
+ 
+}
+
+/* -----------LISTASIDE--------------- */
+
+.listAside{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.listAside h2{
+  display: flex;
+  margin-top: 2vh; /*separar un poco del header a categoria*/
+  font-size: 3vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.listAside ul{
+  margin-top: 3vh;  /*separar un poco de la lista de categorias con el titulo categoria*/
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1vh;
+
+}
+
+.listAside ul li{
+  font-size: 2.5vh;
+  font-weight: 500;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+.listAside ul li:hover{
+  cursor: pointer;
+  background-color: rgb(153, 63, 63);
+  color: white;
+}
+
+.liActive{
+  background-color: rgb(153, 63, 63);
+  color: white;
+}
+
+/* -----------POPUP---------- */
+.popUpContainer__principal{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left:0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  
+}
+
+
+.popUpContainer{
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  box-shadow: 5px 2px 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.containerTitlePopUp{
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+}
+
+.containerInputs__PopUp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+.containerInputs__PopUp input,
+.containerInputs__PopUp select{
+  width: 60%;
+  border: 1px solid grey;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.containerButtons__PopUp{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonPopUp{
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 2vh;
+
+}
+
+.cancel{
+  background-color: rgb(255, 255, 54);
+}
+
+.accept{
+  background-color:rgb(23, 242, 23) ;
+}
+
+.delete{
+  background-color: rgb(242, 48, 48);
+}
+
+/* ------MEDIA QUERYS------ */
+
+@media screen and (min-width:1280px) {
+  .containerProductStore{
+  
+    grid-template-columns: repeat(4,0.6fr);
+  }
+  
+  .containerTargetItem{
+    width: 15vw;
+  }
+  
+}
+
+/*-------SCROLLBAR----------*/
+
+::-webkit-scrollbar{
+  width: 0.7rem;
+  background-color: white;
+  border-radius: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color:rgb(153, 63, 63);
+  border-radius: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color:rgb(173, 72, 72);
+  border-radius: 0.4rem;
+}
